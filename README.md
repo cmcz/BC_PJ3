@@ -20,6 +20,9 @@ This repository containts an Ethereum DApp that demonstrates a Supply Chain flow
 
 https://sepolia.etherscan.io/address/0x291fab207f423faef86581b6fa49c372feceeffd
 
+## Transcation ID
+0x9366c9ab48616d6f7226d836240c8fa63922a9275250d6523d9ca0a5f89091bb
+
 ## DApp User Interface
 
 The DApp User Interface when running should look like...
@@ -31,7 +34,6 @@ The DApp User Interface when running should look like...
 ![truffle test](images/ftc_product_details.png)
 
 ![truffle test](images/ftc_transaction_history.png)
-
 
 ## Getting Started
 
@@ -46,6 +48,18 @@ Ganache CLI v6.12.2 (ganache-core: 2.13.2)
 Truffle v4.1.14 (core: 4.1.14)
 Solidity v0.4.24 (solc-js)
 ```
+
+### Libraries
+
+[Roles.sol](./project-6/contracts/coffeeaccesscontrol/Roles.sol): Library for managing addresses assigned to a Role. 
+
+It is used in order to improve the efficiency and reusability of the code, such that the development process can be accelerated. Moreover, it can also simplify future maintenance.
+
+It includes the following functions: 
+
+* add(Role storage role, address account) 
+* remove(Role storage role, address account)
+* has(Role storage role, address account) return (bool)
 
 ### Installing
 
